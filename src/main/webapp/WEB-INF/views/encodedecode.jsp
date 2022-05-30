@@ -7,8 +7,11 @@
 <title>Encode/Decode String</title>
 <style type="text/css">
 .tabcontent {
-	width: 90% padding: 6px 12px;
+	margin: auto; width : 50%;
+	padding: 6px 12px;
 	border: 2px solid #ccc;
+	padding: 6px 12px;
+	width: 50%;
 }
 
 textarea {
@@ -21,8 +24,20 @@ li {
 	list-style: none;
 }
 
-.output{
-	
+.output {
+	font-size: 20px;
+	width: 90%;
+}
+button {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+input {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 20px;
+	margin-top: 10px;
 }
 </style>
 </head>
@@ -38,7 +53,7 @@ li {
 				Category
 				<ul>
 					<li><input type="radio" id="category-id-1" name="category"
-						value="Encode" required><label>Encode</label></input></li>
+						value="Encode" required><label>Encode</label></li>
 					<li><input type="radio" id="category-id-2" name="category"
 						value="Decode"><label>Decode</label></li>
 				</ul>
@@ -57,9 +72,10 @@ li {
 			<input type="submit" value="Submit"> <a href="/HandyUtility"><input
 				type="button" value="Back"></a>
 		</form>
+		<div>
+		Encoded/Decoded String is: <input type="text" class="output" value="${strEncodeDecode}">
+			<input type="button" value="Copy">
 	</div>
-	<div>
-		<span class="output">${strEncodeDecode}</span>
 	</div>
 </body>
 </html>
